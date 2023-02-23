@@ -2,7 +2,7 @@
 string name = Console.ReadLine()!;
 if (name.ToLower() == "alex")
 {
-    Console.WriteLine("Cool bro, you are comeback!!!");
+    Console.WriteLine("Cool bro, you are returned!!!");
 }
 else
 {
