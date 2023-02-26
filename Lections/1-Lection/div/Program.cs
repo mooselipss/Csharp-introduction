@@ -3,3 +3,4 @@ double firstnumber = double.Parse(Console.ReadLine()!);
 Console.WriteLine("Enter second number");
 double secondnumber = double.Parse(Console.ReadLine()!);
 Console.WriteLine(firstnumber / secondnumber);
+Console.WriteLine("Hello");
