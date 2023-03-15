@@ -26,5 +26,41 @@
 };
 
 
+void PrintImage(int[,] matr)
+{
+    for (int rows = 0; rows < matr.GetLength(0); rows++)
+    {
+        for (int columns = 0; columns < matr.GetLength(1); columns++)
+        {
+            if (matr[rows, columns] == 1)
+            {
+                Console.Write("+");
+            }
+            else
+            {
+                Console.Write(" ");
+            }
+        }
+        Console.WriteLine();
+    }
+}
+
+void FillImage(int row, int column)
+{
+    if (pic[row, column] == 0)
+    {
+        pic[row, column] = 1;
+
+        FillImage(row - 1, column);
+        FillImage(row, column - 1);
+        FillImage(row + 1, column);
+        FillImage(row, column + 1);
+    }
+}
 
 
+
+
+PrintImage(pic);
+FillImage(13, 13);
+PrintImage(pic);
