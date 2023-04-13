@@ -10,6 +10,6 @@ int SumNum(int start, int end)
 }
 
 int start = 1;
-int end = 15;
+int end = 17;
 int resSum = SumNum(start, end);
 Console.WriteLine(resSum);
